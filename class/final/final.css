@@ -1,0 +1,32 @@
+function checkValidation(){
+
+    
+    const email=document.getElementById("email").value
+    const password1=document.getElementById("password1").value
+    const password2=document.getElementById("password2").value
+
+const refresh=()=>{
+    
+    const token=String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+    document.getElementById("auth").innerText=token;
+
+
+function changePhone1(){
+
+    const phone1 =document.getElementById("phone1").value 
+        
+            if(phone1.length===3){
+                document.getElementById("phone2").focus()
+        
+            }
+        }
+        
+function changePhone2(){
+     const phone2 =document.getElementById("phone2").value
+        
+            if(phone2.length===4){
+                document.getElementById("phone3").focus()
+        
+            }
+        
+        }      
